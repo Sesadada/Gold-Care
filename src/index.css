@@ -32,6 +32,6 @@
   }
 
   button {
-    @apply text-skin-base rounded-full border-2 border-skin-bprimary bg-skin-primary1 duration-500 hover:bg-skin-primary1-hover py-3 md:py-1 md:text-xs lg:py-2 lg:text-base;
+    @apply text-skin-base rounded-full border-2 border-skin-bprimary bg-skin-primary1 duration-500 hover:bg-skin-primary1-hover py-3 my-2 md:py-1 md:text-xs lg:py-2 lg:text-base;
   }
 }
