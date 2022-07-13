@@ -4,20 +4,34 @@
 
 @layer base {
   :root {
-    --color-text-base: #364345; // gris oscuro-negro
-    --color-text-muted: ##b0b2b2; //gris claro
-    --color-text-inverted: #ffffff; //blanco
+    --color-text-base: #364345;
+    --color-text-muted: #b0b2b2;
+    --color-text-inverted: #ffffff;
+    --color-text-primary: #80cbc4;
+    --color-text-secondary: #009688;
+    --color-text-secondark: #00675b;
 
-    --color-primary1: #80cbc4; //celeste
-    --color-primary1-hover: #70b1ab;
-
+    --color-primary1: #80cbc4;
+    --color-primary1-hover: #b2fef7;
     --color-primary2: #b2fef7;
     --color-primary2-hover: #9ee1db;
-
-    --color-secondary1: #009688; //turquesa
+    --color-secondary1: #009688;
     --color-secondary1-hover: #026e64;
-
     --color-secondary2: #52c7b8;
     --color-secondary2-hover: #3d958a;
+
+    --color-plain: #eef3ff;
+    --color-plain-dark: #dbdfe7;
+
+    --color-bprimary: #80cbc4;
+    --color-bdark: #dbdfe7;
+  }
+
+  li {
+    @apply p-4 text-skin-base;
+  }
+
+  button {
+    @apply text-skin-base rounded-full border-2 border-skin-bprimary bg-skin-primary1 duration-500 hover:bg-skin-primary1-hover m-2 px-8 py-3 md:py-2;
   }
 }
