@@ -10,7 +10,7 @@ const Nosotros = () => {
   });
   const nosotrosImg = cld.image("nosotros");
   return (
-    <div className="w-full my-16">
+    <div name="nosotros" className="w-full my-20">
       <div className="max-w-[1240px] mx-auto">
         <div className="text-center">
           {" "}

@@ -17,7 +17,10 @@ const Hero = () => {
   });
   const heroImg = cld.image("senniors-hero");
   return (
-    <div className="w-full h-screen bg-skin-plain flex flex-col justify-between">
+    <div
+      name="home"
+      className="w-full h-screen bg-skin-plain flex flex-col justify-between"
+    >
       <div className="grid md:grid-cols-2 max-w-[1240px] m-auto">
         <div className="flex flex-col justify-center md:items-start w-full lg:px-20 md:px-8 px-2 py-8  ">
           <p className="  ml-4 text-3xl">Necesitas una cuidadora?</p>

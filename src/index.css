@@ -35,10 +35,6 @@
     --color-bazul-oscuro: #4f6696;
   }
 
-  li {
-    @apply p-4 text-skin-base;
-  }
-
   button {
     @apply text-skin-base rounded-full shadow-xl bg-skin-primary1 duration-500 hover:bg-skin-primary1-hover py-3 my-2 lg:py-2;
   }
