@@ -19,6 +19,8 @@ module.exports = {
           base: "var(--color-text-base)",
           inverted: "var(--color-text-inverted)",
           muted: "var(--color-text-muted)",
+          azul: "var(--color-azul)",
+          "azul-oscuro": "var(--color-azul-oscuro)",
         },
       },
       backgroundColor: {
@@ -37,12 +39,17 @@ module.exports = {
 
           plain: "var(--color-plain)",
           "plain-dark": "var(--color-plain-dark)",
+
+          azul: "var(--color-azul)",
+          "azul-oscuro": "var(--color-azul-oscuro)",
         },
       },
       borderColor: {
         skin: {
           bprimary: "var(--color-bprimary)",
           bdark: "var(--color-bdark)",
+          bazul: "var(--color-bazul)",
+          "bazul-oscuro": "var(--color-bazul-oscuro)",
         },
       },
     },

@@ -10,6 +10,8 @@
     --color-text-primary: #80cbc4;
     --color-text-secondary: #009688;
     --color-text-secondark: #00675b;
+    --color-text-azul: #8fa7db;
+    --color-text-azul-oscuro: #4f6696;
 
     --color-primary1: #80cbc4;
     --color-primary1-hover: #b2fef7;
@@ -25,13 +27,19 @@
 
     --color-bprimary: #80cbc4;
     --color-bdark: #dbdfe7;
+
+    --color-azul: #8fa7db;
+    --color-azul-oscuro: #4f6696;
+
+    --color-bazul: #8fa7db;
+    --color-bazul-oscuro: #4f6696;
   }
 
   li {
-    @apply p-4 text-skin-base md:text-sm md:p-2  lg:text-base lg:p-4;
+    @apply p-4 text-skin-base;
   }
 
   button {
-    @apply text-skin-base rounded-full border-2 border-skin-bprimary bg-skin-primary1 duration-500 hover:bg-skin-primary1-hover py-3 my-2 md:py-1 md:text-xs lg:py-2 lg:text-base;
+    @apply text-skin-base rounded-full shadow-xl bg-skin-primary1 duration-500 hover:bg-skin-primary1-hover py-3 my-2 lg:py-2;
   }
 }
