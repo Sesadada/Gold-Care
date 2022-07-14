@@ -17,26 +17,21 @@ const Navbar = () => {
           </Link>
           <div className="pr-4">
             <ul className="hidden md:flex ">
-              <li className="p-4 text-skin-base">
-                <Link to="servicios" smooth={true} offset={-50} duration={500}>
-                  Servicios
-                </Link>
-              </li>
-              <li className="p-4 text-skin-base">
-                <Link to="precios" smooth={true} offset={50} duration={500}>
-                  Precios
-                </Link>
-              </li>
-              <li className="p-4 text-skin-base">
-                <Link to="nosotros" smooth={true} offset={-50} duration={500}>
-                  Nosotros
-                </Link>
-              </li>
-              <li className="p-4 text-skin-base">
-                <Link to="contacto" smooth={true} offset={50} duration={500}>
-                  Contacto
-                </Link>
-              </li>
+              <Link to="servicios" smooth={true} offset={-80} duration={500}>
+                <li className="p-4 text-skin-base">Servicios</li>
+              </Link>
+
+              <Link to="precios" smooth={true} offset={-100} duration={500}>
+                <li className="p-4 text-skin-base">Precios </li>
+              </Link>
+
+              <Link to="nosotros" smooth={true} offset={-80} duration={500}>
+                <li className="p-4 text-skin-base"> Nosotros</li>
+              </Link>
+
+              <Link to="contacto" smooth={true} offset={50} duration={500}>
+                <li className="p-4 text-skin-base"> Contacto </li>
+              </Link>
             </ul>
           </div>
         </div>
@@ -50,50 +45,56 @@ const Navbar = () => {
           !nav ? "hidden" : "md:hidden absolute bg-skin-plain w-full px-8"
         }
       >
-        <li className="p-4 text-skin-base border-b-2 border-zinc-300 w-full">
-          <Link
-            onClick={handleClick}
-            to="servicios"
-            smooth={true}
-            offset={-50}
-            duration={500}
-          >
+        <Link
+          onClick={handleClick}
+          to="servicios"
+          smooth={true}
+          offset={-60}
+          duration={500}
+        >
+          <li className="p-4 text-skin-base border-b-2 border-zinc-300 w-full">
             Servicios
-          </Link>
-        </li>
-        <li className="p-4 text-skin-base border-b-2 border-zinc-300 w-full">
-          <Link
-            onClick={handleClick}
-            to="precios"
-            smooth={true}
-            offset={50}
-            duration={500}
-          >
+          </li>
+        </Link>
+
+        <Link
+          onClick={handleClick}
+          to="precios"
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >
+          {" "}
+          <li className="p-4 text-skin-base border-b-2 border-zinc-300 w-full">
             Precios
-          </Link>
-        </li>
-        <li className="p-4 text-skin-base border-b-2 border-zinc-300 w-full">
-          <Link
-            onClick={handleClick}
-            to="nosotros"
-            smooth={true}
-            offset={-50}
-            duration={500}
-          >
-            Nosotros
-          </Link>
-        </li>
-        <li className="p-4 text-skin-base border-b-2 border-zinc-300 w-full">
-          <Link
-            onClick={handleClick}
-            to="contacto"
-            smooth={true}
-            offset={50}
-            duration={500}
-          >
+          </li>
+        </Link>
+
+        <Link
+          onClick={handleClick}
+          to="nosotros"
+          smooth={true}
+          offset={-80}
+          duration={500}
+        >
+          {" "}
+          <li className="p-4 text-skin-base border-b-2 border-zinc-300 w-full">
+            Nosotros{" "}
+          </li>
+        </Link>
+
+        <Link
+          onClick={handleClick}
+          to="contacto"
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
+          {" "}
+          <li className="p-4 text-skin-base border-b-2 border-zinc-300 w-full">
             Contacto
-          </Link>
-        </li>
+          </li>
+        </Link>
       </ul>
     </nav>
   );

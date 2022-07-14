@@ -34,6 +34,9 @@
     --color-bazul: #8fa7db;
     --color-bazul-oscuro: #4f6696;
   }
+  li {
+    @apply hover:cursor-pointer hover:text-skin-secondary hover:shadow-md md:hover:rounded-full md:py-1 md:mx-3;
+  }
 
   button {
     @apply text-skin-base rounded-full shadow-xl bg-skin-primary1 duration-500 hover:bg-skin-primary1-hover py-3 my-2 lg:py-2;
