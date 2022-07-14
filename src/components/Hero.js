@@ -1,4 +1,6 @@
 import React from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
+
 import {
   HandIcon,
   ClockIcon,
@@ -28,9 +30,16 @@ const Hero = () => {
             Cuidado Domiciliario
           </h1>
           <p className="text-2xl ml-4">Servicio Humano y Profesional</p>
-          <button className="  ml-4 mt-4 py-3 px-6 sm:w-[60%]">
-            Pide Presupuesto
-          </button>
+          <Link
+            to="presupuesto"
+            smooth={true}
+            duration={500}
+            className="w-full"
+          >
+            <button className="ml-4 mt-4 py-3 px-6 sm:w-[60%]">
+              Pide Presupuesto
+            </button>
+          </Link>
         </div>
         <div>
           <AdvancedImage cldImg={heroImg} className="w-full" />

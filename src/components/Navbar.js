@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="px-2 flex justify-between items-center w-full h-full">
         <div className="flex  justify-between w-full items-center">
           <Link to="home" smooth={true} duration={500}>
-            <h1 className=" ml-4 text-skin-secondary uppercase md:text-3xl font-extrabold mr-4 md:mr-0 lg:mr-4 text-4xl min-w-[212px]">
+            <h1 className=" ml-4 text-skin-secondary uppercase md:text-3xl font-extrabold mr-4 md:mr-0 lg:mr-4 text-4xl min-w-[212px] hover:cursor-pointer">
               Senniors
             </h1>
           </Link>
