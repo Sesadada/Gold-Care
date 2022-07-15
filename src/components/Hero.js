@@ -1,5 +1,6 @@
-import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
+import { useContext } from "react";
+import { GenContext } from "../context/GenContext";
 
 import {
   HandIcon,
@@ -9,15 +10,11 @@ import {
 } from "@heroicons/react/solid";
 
 import { AdvancedImage } from "@cloudinary/react";
-import { Cloudinary } from "@cloudinary/url-gen";
 
 const Hero = () => {
-  const cld = new Cloudinary({
-    cloud: {
-      cloudName: "sesadada",
-    },
-  });
-  const heroImg = cld.image("senniors-hero");
+  const value = useContext(GenContext);
+  const { heroImg } = value;
+
   return (
     <div
       name="home"

@@ -1,13 +1,10 @@
 import { AdvancedImage } from "@cloudinary/react";
-import { Cloudinary } from "@cloudinary/url-gen";
+import { useContext } from "react";
+import { GenContext } from "../context/GenContext";
 
 const Nosotros = () => {
-  const cld = new Cloudinary({
-    cloud: {
-      cloudName: "sesadada",
-    },
-  });
-  const nosotrosImg = cld.image("nosotros");
+  const value = useContext(GenContext);
+  const { nosotrosImg } = value;
   return (
     <div name="nosotros" className="w-full my-20">
       <div className="max-w-[1240px] mx-auto">

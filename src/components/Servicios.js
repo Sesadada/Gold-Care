@@ -6,15 +6,12 @@ import {
   PlusCircleIcon,
 } from "@heroicons/react/outline";
 import { AdvancedImage } from "@cloudinary/react";
-import { Cloudinary } from "@cloudinary/url-gen";
+import { useContext } from "react";
+import { GenContext } from "../context/GenContext";
 
 const Servicios = () => {
-  const cld = new Cloudinary({
-    cloud: {
-      cloudName: "sesadada",
-    },
-  });
-  const serviciosImg = cld.image("servicios");
+  const value = useContext(GenContext);
+  const { serviciosImg } = value;
   return (
     <div name="servicios" className="w-full  mt-24">
       <div className="w-full h-[700px] bg-gray-900/90 absolute">

@@ -1,4 +1,5 @@
 import { createContext, useState } from "react";
+import { Cloudinary } from "@cloudinary/url-gen";
 
 export const GenContext = createContext();
 
@@ -15,8 +16,27 @@ export const GenContextProvider = ({ children }) => {
     specialty: "ancianos",
   });
 
+  const cld = new Cloudinary({
+    cloud: {
+      cloudName: "sesadada",
+    },
+  });
+  const heroImg = cld.image("senniors-hero");
+  const serviciosImg = cld.image("servicios");
+  const nosotrosImg = cld.image("nosotros");
+  const preciosImg = cld.image("precios");
+  const contactoImg = cld.image("contacto");
   return (
-    <GenContext.Provider value={{ form: [formData, setFormData] }}>
+    <GenContext.Provider
+      value={{
+        form: [formData, setFormData],
+        heroImg,
+        serviciosImg,
+        nosotrosImg,
+        preciosImg,
+        contactoImg,
+      }}
+    >
       {children}
     </GenContext.Provider>
   );

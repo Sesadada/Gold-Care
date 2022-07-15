@@ -6,17 +6,13 @@ import {
 } from "@heroicons/react/outline";
 
 import { AdvancedImage } from "@cloudinary/react";
-import { Cloudinary } from "@cloudinary/url-gen";
+import { useContext } from "react";
+import { GenContext } from "../context/GenContext";
 import Form from "./form/Form";
 
 const Contacto = () => {
-  const cld = new Cloudinary({
-    cloud: {
-      cloudName: "sesadada",
-    },
-  });
-  const contactoImg = cld.image("contacto");
-  const ofiImg = cld.image("nosotros");
+  const value = useContext(GenContext);
+  const { contactoImg, nosotrosImg } = value;
 
   return (
     <div name="contacto" className="w-full  mt-24 ">
@@ -63,7 +59,7 @@ const Contacto = () => {
             </div>
             <div>
               <AdvancedImage
-                cldImg={ofiImg}
+                cldImg={nosotrosImg}
                 className="w-full h-full object-cover border-2 border-pink-400 mt-12 rounded-xl hidden md:block"
               />
             </div>

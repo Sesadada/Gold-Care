@@ -1,7 +1,8 @@
 import { Link, animateScroll as scroll } from "react-scroll";
 
 import { AdvancedImage } from "@cloudinary/react";
-import { Cloudinary } from "@cloudinary/url-gen";
+import { useContext } from "react";
+import { GenContext } from "../context/GenContext";
 
 import {
   AtSymbolIcon,
@@ -9,14 +10,9 @@ import {
   PhoneIcon,
 } from "@heroicons/react/outline";
 
-const cld = new Cloudinary({
-  cloud: {
-    cloudName: "sesadada",
-  },
-});
-const preciosImg = cld.image("precios");
-
 const Precios = () => {
+  const value = useContext(GenContext);
+  const { preciosImg } = value;
   return (
     <div name="precios" className="w-full my-20">
       <div className="max-w-[1240px] mx-auto">
