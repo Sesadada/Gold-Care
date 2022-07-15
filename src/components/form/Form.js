@@ -4,6 +4,7 @@ import Docu from "./Docu";
 import Info from "./Info";
 
 const Form = () => {
+  const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     lastName: "",
@@ -63,12 +64,18 @@ const Form = () => {
               Prev
             </button>
             <button
-              disabled={page === formTitles.length - 1}
-              onClick={(e) => changePages(e, "d")}
+              onClick={(e) => {
+                if (page === formTitles - 1) {
+                  setSubmitted(true);
+                } else {
+                  changePages(e, "d");
+                }
+              }}
               className="p-2 mx-1"
             >
-              Next
+              {page === formTitles.length - 1 ? "Submit" : "Next"}
             </button>
+            {!submitted && <p> Formulario Enviado</p>}
           </div>
         </div>
       </form>

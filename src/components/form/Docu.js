@@ -23,6 +23,7 @@ const Docu = () => {
       </div>
       <div className="border-2 border-yellow-300 rounded-lg p-4 flex flex-col py-6 m-4 justify-between">
         <input
+          required
           type="file"
           name="file"
           onChange={onChangeHandler}
