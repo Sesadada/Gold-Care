@@ -5,17 +5,7 @@ import Info from "./Info";
 
 const Form = () => {
   const [submitted, setSubmitted] = useState(false);
-  const [formData, setFormData] = useState({
-    name: "",
-    lastName: "",
-    city: "",
-    email: "",
-    permit: "",
-    cv: {},
-    days: "",
-    kind: "",
-    specialty: "",
-  });
+
   const [page, setPage] = useState(0);
   const formTitles = [
     "INFORMACION PERSONAL",
@@ -31,7 +21,7 @@ const Form = () => {
 
   const pageDisplay = () => {
     if (page === 0) {
-      return <Info formData={formData} setFormData={setFormData} />;
+      return <Info />;
     } else if (page === 1) {
       return <Docu />;
     } else {

@@ -6,18 +6,21 @@ import Nosotros from "./components/Nosotros";
 import Precios from "./components/Precios";
 import Presupuesto from "./components/Presupuesto";
 import Servicios from "./components/Servicios";
+import { GenContextProvider } from "./context/GenContext";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Hero />
-      <Servicios />
-      <Precios />
-      <Presupuesto />
-      <Nosotros />
-      <Contacto />
-      <Footer />
+      <GenContextProvider>
+        <Navbar />
+        <Hero />
+        <Servicios />
+        <Precios />
+        <Presupuesto />
+        <Nosotros />
+        <Contacto />
+        <Footer />
+      </GenContextProvider>
     </div>
   );
 }
