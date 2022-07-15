@@ -8,12 +8,11 @@ export const GenContextProvider = ({ children }) => {
     lastName: "",
     city: "",
     email: "",
-    permit: "",
-    years: 0,
-    hasCv: "",
-    days: "",
-    kind: "",
-    specialty: "",
+    permit: "si",
+    years: "mas",
+    days: "todos",
+    kind: "interna",
+    specialty: "ancianos",
   });
 
   return (

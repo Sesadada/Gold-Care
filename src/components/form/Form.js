@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Dispo from "./Dispo";
 import Docu from "./Docu";
 import Info from "./Info";
+import { useContext } from "react";
+import { GenContext } from "../../context/GenContext";
 
 const Form = () => {
   const [submitted, setSubmitted] = useState(false);
+  const { form } = useContext(GenContext);
+  const [formData, setFormData] = form;
 
   const [page, setPage] = useState(0);
   const formTitles = [
@@ -28,7 +32,10 @@ const Form = () => {
       return <Dispo />;
     }
   };
-  console.log(page);
+  useEffect(() => {
+    console.log(formData);
+  }, [submitted, formData]);
+
   return (
     <div className="flex flex-col justify-center">
       <div className="mx-4 mt-4 ">

@@ -19,9 +19,10 @@ const Info = () => {
         />
       </div>
       <div className=" py-3 flex flex-col  m-auto  justify-center items-center">
-        <label className="pb-4  ">Apellido</label>
+        <label className="pb-4">Apellido</label>
         <input
           required
+          value={formData.lastName}
           onChange={(e) =>
             setFormData({ ...formData, lastName: e.target.value })
           }
@@ -33,6 +34,7 @@ const Info = () => {
       <div className=" py-3 flex flex-col  m-auto  justify-center items-center">
         <label className="pb-4  ">Ciudad de residencia</label>
         <input
+          value={formData.city}
           required
           onChange={(e) => setFormData({ ...formData, city: e.target.value })}
           type="text"
@@ -44,6 +46,7 @@ const Info = () => {
         <label className="pb-4  ">Email</label>
         <input
           required
+          value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
           type="email"
           placeholder="Email"
