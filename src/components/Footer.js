@@ -53,7 +53,7 @@ const Footer = () => {
               type="email"
               className="w-full p-2 mr-4 rounded-md mb-4"
             />
-            <button className="p-2 mb-4">Suscribete</button>
+            <button className="p-2 mb-5 mr-2">Suscribete</button>
           </form>
         </div>
       </div>

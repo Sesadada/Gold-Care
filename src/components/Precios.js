@@ -48,12 +48,12 @@ const Precios = () => {
                 <PhoneIcon className="w-5 mr-2 text-skin-secondary" />{" "}
                 <p>92 060 49 21</p>{" "}
               </div>
-              <div className="flex">
+              <div className="flex pt-3">
                 <DeviceMobileIcon className="w-5 mr-2 text-skin-secondary" />{" "}
                 <p>684 32 42 99</p>{" "}
               </div>
               <div
-                className="flex cursor-pointer"
+                className="flex  pt-3 cursor-pointer"
                 onClick={() => (window.location = "mailto:hola@senniors.com")}
               >
                 <AtSymbolIcon className="w-5 mr-2 text-skin-secondary" />{" "}

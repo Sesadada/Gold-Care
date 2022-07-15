@@ -1,4 +1,3 @@
-import React from "react";
 import {
   ArrowSmRightIcon,
   HandIcon,
@@ -16,7 +15,6 @@ const Servicios = () => {
     },
   });
   const serviciosImg = cld.image("servicios");
-
   return (
     <div name="servicios" className="w-full  mt-24">
       <div className="w-full h-[700px] bg-gray-900/90 absolute">
@@ -94,8 +92,8 @@ const Servicios = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-2xl">
-            <div className="p-8">
+          <div className="bg-white rounded-xl shadow-2xl lg:flex lg:flex-col lg:justify-between">
+            <div className="p-8 ">
               <HandIcon className="w-16 p-3 bg-skin-secondary1 text-skin-inverted rounded-lg mt-[-4rem]" />
               <h1 className="font-bold text-2xl my-6">Acompañamiento</h1>
               <p className="text-skin-base text-lg">

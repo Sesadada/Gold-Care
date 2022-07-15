@@ -29,7 +29,7 @@ const Navbar = () => {
                 <li className="p-4 text-skin-base"> Nosotros</li>
               </Link>
 
-              <Link to="contacto" smooth={true} offset={50} duration={500}>
+              <Link to="contacto" smooth={true} offset={-40} duration={500}>
                 <li className="p-4 text-skin-base"> Contacto </li>
               </Link>
             </ul>

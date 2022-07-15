@@ -1,3 +1,4 @@
+import Contacto from "./components/Contacto";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -15,6 +16,7 @@ function App() {
       <Precios />
       <Presupuesto />
       <Nosotros />
+      <Contacto />
       <Footer />
     </div>
   );
