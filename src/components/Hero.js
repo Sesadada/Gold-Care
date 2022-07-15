@@ -73,7 +73,7 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className="absolute right-4 h-36 w-36 bottom-[22%] md:bottom-[15%] lg:bottom-[18%] bg-yellow-300 opacity-90  text-center shadow-xl rounded-full flex justify-center items-center ">
+        <div className="absolute right-4 h-36 w-36 bottom-[25%] md:bottom-[15%] lg:bottom-[18%] bg-yellow-300 opacity-90  text-center shadow-xl rounded-full flex justify-center items-center ">
           <Link
             to="trabaja"
             smooth={true}
