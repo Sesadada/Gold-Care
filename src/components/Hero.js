@@ -47,22 +47,30 @@ const Hero = () => {
             Nuestros Servicios
           </p>
           <div className="flex flex-wrap px-4 justify-center">
-            <p className="flex px-4 py-2 text-skin-inverted">
-              <HomeIcon className="h-6 text-skin-inverted pr-2" /> Cuidadora
-              Interna
-            </p>
-            <p className="flex px-4 py-2 text-skin-inverted">
-              <ClockIcon className="h-6 text-skin-inverted pr-2" /> Cuidadora
-              por horas
-            </p>
-            <p className="flex px-4 py-2 text-skin-inverted">
-              <HandIcon className="h-6 text-skin-inverted pr-2" />{" "}
-              Acompañamiento{" "}
-            </p>
-            <p className="flex px-4 py-2 text-skin-inverted">
-              <PlusCircleIcon className="h-6 text-skin-inverted pr-2" /> Trae a
-              tu cuidadora
-            </p>
+            <Link to="interna" smooth={true} offset={-80} duration={500}>
+              <p className="flex px-4 py-2 text-skin-inverted cursor-pointer">
+                <HomeIcon className="h-6 text-skin-inverted pr-2" /> Cuidadora
+                Interna
+              </p>
+            </Link>
+            <Link to="horas" smooth={true} offset={-80} duration={500}>
+              <p className="flex px-4 py-2 text-skin-inverted cursor-pointer">
+                <ClockIcon className="h-6 text-skin-inverted pr-2" /> Cuidadora
+                por horas
+              </p>
+            </Link>
+            <Link to="acomp" smooth={true} offset={-80} duration={500}>
+              <p className="flex px-4 py-2 text-skin-inverted cursor-pointer">
+                <HandIcon className="h-6 text-skin-inverted pr-2" />{" "}
+                Acompañamiento{" "}
+              </p>
+            </Link>
+            <Link to="trae" smooth={true} offset={-80} duration={500}>
+              <p className="flex px-4 py-2 text-skin-inverted cursor-pointer">
+                <PlusCircleIcon className="h-6 text-skin-inverted pr-2" /> Trae
+                a tu cuidadora
+              </p>
+            </Link>
           </div>
         </div>
         <div className="absolute right-4 h-36 w-36 bottom-[22%] md:bottom-[15%] lg:bottom-[18%] bg-yellow-300 opacity-90  text-center shadow-xl rounded-full flex justify-center items-center ">

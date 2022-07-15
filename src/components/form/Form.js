@@ -6,7 +6,7 @@ import { useContext } from "react";
 import { GenContext } from "../../context/GenContext";
 
 const Form = () => {
-  const [submitted, setSubmitted] = useState(false);
+  const [visible, setVisible] = useState(false);
   const { form } = useContext(GenContext);
   const [formData, setFormData] = form;
 
@@ -32,9 +32,6 @@ const Form = () => {
       return <Dispo />;
     }
   };
-  useEffect(() => {
-    console.log(formData);
-  }, [submitted, formData]);
 
   return (
     <div className="flex flex-col justify-center">
@@ -63,7 +60,7 @@ const Form = () => {
             <button
               onClick={(e) => {
                 if (page === formTitles - 1) {
-                  setSubmitted(true);
+                  setVisible(true);
                 } else {
                   changePages(e, "d");
                 }
@@ -72,7 +69,7 @@ const Form = () => {
             >
               {page === formTitles.length - 1 ? "Submit" : "Next"}
             </button>
-            {!submitted && <p> Formulario Enviado</p>}
+            {visible && <p> Formulario Enviado</p>}
           </div>
         </div>
       </form>

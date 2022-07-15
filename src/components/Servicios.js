@@ -33,7 +33,10 @@ const Servicios = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 relative gap-x-8 gap-y-16 px-4 pt-12 sm:pt-20 text-skin-base">
           <div className="bg-white rounded-xl shadow-2xl">
             <div className="p-8">
-              <HomeIcon className="w-16 p-3 bg-skin-secondary1 text-skin-inverted rounded-lg mt-[-4rem]" />
+              <HomeIcon
+                name="interna"
+                className="w-16 p-3 bg-skin-secondary1 text-skin-inverted rounded-lg mt-[-4rem]"
+              />
               <h1 className="font-bold text-2xl my-6">Cuidadora Interna</h1>
               <p className="text-skin-base text-lg">
                 En Senniors te ayudamos a seleccionar a la cuidadora interna que
@@ -62,9 +65,12 @@ const Servicios = () => {
 
           <div className="bg-white rounded-xl shadow-2xl">
             <div className="p-8">
-              <ClockIcon className="w-16 p-3 bg-skin-secondary1 text-skin-inverted rounded-lg mt-[-4rem]" />
+              <ClockIcon
+                name="horas"
+                className="w-16 p-3 bg-skin-secondary1 text-skin-inverted rounded-lg mt-[-4rem]"
+              />
               <h1 className="font-bold text-2xl my-6">Cuidadora por horas</h1>
-              <p className="text-skin-base text-lg">
+              <p name="horas" className="text-skin-base text-lg">
                 Atención domiciliaria por horas para el cuidado de personas
                 mayores y dependientes. Jornada completa, jornada parcial y
                 jornada nocturna. En Senniors seleccionamos a las mejores
@@ -91,7 +97,10 @@ const Servicios = () => {
 
           <div className="bg-white rounded-xl shadow-2xl lg:flex lg:flex-col lg:justify-between">
             <div className="p-8 ">
-              <HandIcon className="w-16 p-3 bg-skin-secondary1 text-skin-inverted rounded-lg mt-[-4rem]" />
+              <HandIcon
+                name="acomp"
+                className="w-16 p-3 bg-skin-secondary1 text-skin-inverted rounded-lg mt-[-4rem]"
+              />
               <h1 className="font-bold text-2xl my-6">Acompañamiento</h1>
               <p className="text-skin-base text-lg">
                 Hacemos una selección personalizada y a medida para que tu
@@ -115,9 +124,12 @@ const Servicios = () => {
 
           <div className="bg-white rounded-xl shadow-2xl">
             <div className="p-8">
-              <PlusCircleIcon className="w-16 p-3 bg-skin-secondary1 text-skin-inverted rounded-lg mt-[-4rem]" />
+              <PlusCircleIcon
+                name="trae"
+                className="w-16 p-3 bg-skin-secondary1 text-skin-inverted rounded-lg mt-[-4rem]"
+              />
               <h1 className="font-bold text-2xl my-6">Trae a tu cuidadora</h1>
-              <p className="text-skin-base text-lg">
+              <p name="trae" className="text-skin-base text-lg">
                 ¿Has seleccionado a una cuidadora por tu cuenta y la quieres
                 contratar? ¿Tienes dudas en relación con la contratación de tu
                 cuidadora? ¿Ya tienes una cuidadora contratada, pero necesitas
