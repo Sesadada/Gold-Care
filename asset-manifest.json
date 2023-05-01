@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Gold-Care/static/css/main.5cc64ff9.css",
+    "main.js": "/Gold-Care/static/js/main.d5da9f58.js",
+    "index.html": "/Gold-Care/index.html",
+    "main.5cc64ff9.css.map": "/Gold-Care/static/css/main.5cc64ff9.css.map",
+    "main.d5da9f58.js.map": "/Gold-Care/static/js/main.d5da9f58.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5cc64ff9.css",
+    "static/js/main.d5da9f58.js"
+  ]
+}
