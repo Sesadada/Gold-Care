@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-text-base: #364345;
+    --color-text-muted: #b0b2b2;
+    --color-text-inverted: #ffffff;
+    --color-text-primary: #80cbc4;
+    --color-text-secondary: #009688;
+    --color-text-secondark: #00675b;
+    --color-text-azul: #8fa7db;
+    --color-text-azul-oscuro: #4f6696;
+
+    --color-primary1: #80cbc4;
+    --color-primary1-hover: #b2fef7;
+    --color-primary2: #b2fef7;
+    --color-primary2-hover: #9ee1db;
+    --color-secondary1: #009688;
+    --color-secondary1-hover: #026e64;
+    --color-secondary2: #52c7b8;
+    --color-secondary2-hover: #3d958a;
+
+    --color-plain: #eef3ff;
+    --color-plain-dark: #dbdfe7;
+
+    --color-bprimary: #80cbc4;
+    --color-bdark: #dbdfe7;
+
+    --color-azul: #8fa7db;
+    --color-azul-oscuro: #4f6696;
+
+    --color-bazul: #8fa7db;
+    --color-bazul-oscuro: #4f6696;
+  }
+  li {
+    @apply hover:cursor-pointer hover:text-skin-secondary hover:shadow-md md:hover:rounded-full md:py-1 md:mx-3;
+  }
+
+  button {
+    @apply text-skin-base rounded-full shadow-xl bg-skin-primary1 duration-500 hover:bg-skin-primary1-hover py-3 my-2 lg:py-2;
+  }
+}
