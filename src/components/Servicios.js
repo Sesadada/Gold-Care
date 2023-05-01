@@ -1,10 +1,4 @@
-import {
-  ArrowSmRightIcon,
-  HandIcon,
-  ClockIcon,
-  HomeIcon,
-  PlusCircleIcon,
-} from "@heroicons/react/outline";
+
 import { AdvancedImage } from "@cloudinary/react";
 import { useContext } from "react";
 import { GenContext } from "../context/GenContext";

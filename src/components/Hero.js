@@ -1,4 +1,4 @@
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import { useContext } from "react";
 import { GenContext } from "../context/GenContext";
 
@@ -38,11 +38,11 @@ const Hero = () => {
             </button>
           </Link>
         </div>
-        <div>
+        <div className="md:mr-8">
           <AdvancedImage cldImg={heroImg} className="w-full" />
         </div>
 
-        <div className="absolute flex flex-col py-4 md:min-w-[768px] lg:min-w-[1024px] bottom-[5%] md:bottom-[0%] lg:bottom-[7%] md:left-1/2 transform md:-translate-x-1/2 bg-skin-azul-oscuro opacity-70 mx-6 text-center shadow-xl rounded-xl md:m-0 ">
+        <div className="absolute flex flex-col py-4 md:min-w-[768px] lg:min-w-[1024px] bottom-[5%] md:bottom-[10%] lg:bottom-[7%] md:left-1/2 transform md:-translate-x-1/2 bg-skin-azul-oscuro opacity-70 mx-6 text-center shadow-xl rounded-xl md:m-0 ">
           <p className="text-skin-inverted font-bold uppercase pb-1">
             Nuestros Servicios
           </p>
@@ -73,7 +73,7 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className="absolute right-4 h-36 w-36 bottom-[25%] md:bottom-[15%] lg:bottom-[18%] bg-yellow-300 opacity-90  text-center shadow-xl rounded-full flex justify-center items-center ">
+        <div className="absolute h-36 w-36 right-4 bottom-[15%] md:h-40 md:w-40 lg:w-50 lg:h-50 md:right-[6%] md:bottom-[20%] lg:right-[15%] lg:bottom-[15%] bg-yellow-300 opacity-90 md:opacity-70  text-center shadow-xl rounded-full flex justify-center items-center ">
           <Link
             to="trabaja"
             smooth={true}

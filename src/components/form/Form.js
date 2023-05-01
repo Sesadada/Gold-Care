@@ -1,14 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import Dispo from "./Dispo";
 import Docu from "./Docu";
 import Info from "./Info";
-import { useContext } from "react";
-import { GenContext } from "../../context/GenContext";
+
 
 const Form = () => {
   const [visible, setVisible] = useState(false);
-  const { form } = useContext(GenContext);
-  const [formData, setFormData] = form;
+
+
 
   const [page, setPage] = useState(0);
   const formTitles = [

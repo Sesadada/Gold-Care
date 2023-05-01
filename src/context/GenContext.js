@@ -1,7 +1,6 @@
 import { createContext, useState } from "react";
 import { Cloudinary } from "@cloudinary/url-gen";
 import {
-  ArrowSmRightIcon,
   HandIcon,
   ClockIcon,
   HomeIcon,
